@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Edad</title>
+  <link rel="stylesheet" href="estilos_calculadora.css">
+
+</head>
+<body>
+    
+  <div class="container">
+    <header>
+      <h1>Calculadora de edad</h1>
+      <p class="lead">Esta página pide tu nombre y año de nacimiento y muestra tu edad actual.</p>
+    </header>
+
+    <div class="card" id="resultadoCard">
+      <div id="mensaje" class="mensaje">Bienvenido/a — espera mientras pedimos tus datos...</div>
+      <div id="detalle" class="detalle"></div>
+
+      <div class="btns">
+        <button id="btnRecalcular">Cambiar datos</button>
+        <button id="btnMostrarEjemplo" class="secondary">Mostrar ejemplo</button>
+      </div>
+
+      <footer id="footerInfo">La edad se calcula con el año actual obtenido del sistema.</footer>
+    </div>
+  </div>
+
+  <script src="script_calculadora.js"></script>
+</body>
+</html>

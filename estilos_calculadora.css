@@ -1,0 +1,97 @@
+:root{
+  --fondo: #436ab9;
+  --card: #ffffff;
+  --texto: #000000;
+  --accent: #ff0000;
+  --sombra: rgba(33,53,71,0.08);
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html,body{
+  height:100%;
+}
+
+body{
+  margin:0;
+  background: linear-gradient(180deg, var(--fondo), #eef4ff 60%);
+  color:var(--texto);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+
+.container{
+  width:100%;
+  max-width:720px;
+  text-align:center;
+}
+
+header{
+  margin-bottom:1.2rem;
+}
+
+h1{
+  margin:0;
+  font-size:1.6rem;
+}
+
+p.lead{
+  margin:0.4rem 0 1.2rem;
+  color:#425a6b;
+}
+
+.card{
+  background:var(--card);
+  padding:1.6rem;
+  border-radius:12px;
+  box-shadow:0 8px 24px var(--sombra);
+  text-align:center;
+}
+
+.mensaje{
+  font-size:1.25rem;
+  margin:1rem 0 0.6rem;
+  font-weight:600;
+}
+
+.detalle{
+  color:#5a6d7a;
+  margin-bottom:1rem;
+}
+
+.btns{
+  display:flex;
+  gap:0.5rem;
+  justify-content:center;
+  margin-top:1rem;
+}
+
+button{
+  border:0;
+  padding:0.6rem 0.9rem;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  background:var(--accent);
+  color:white;
+  box-shadow:0 6px 18px rgba(39,110,241,0.18);
+}
+
+button.secondary{
+  background:transparent;
+  color:var(--texto);
+  border:1px solid #e6eefc;
+  box-shadow:none;
+}
+
+footer{
+  margin-top:0.8rem;
+  font-size:0.85rem;
+  color:#6b7c88;
+}
+
+@media (max-width:420px){
+  h1{font-size:1.2rem}
+  .mensaje{font-size:1.05rem}
+}
